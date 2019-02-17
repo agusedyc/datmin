@@ -1,0 +1,905 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pembaya",
+				"pembayaran_spi"
+			],
+			[
+				"pemba",
+				"pembayaran_slip"
+			],
+			[
+				"pembayaran",
+				"pembayaran_spi"
+			],
+			[
+				"uraian",
+				"uraian_harga"
+			],
+			[
+				"kelas",
+				"kelasSiswaIds"
+			],
+			[
+				"Eksul",
+				"slip-ekstrakurikuler"
+			],
+			[
+				"jenis",
+				"jenis_slip_id"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"laporanTahun",
+				"laporanTahunanUraian"
+			],
+			[
+				"jenjang",
+				"jenjang_id"
+			],
+			[
+				"periode",
+				"periode_id"
+			],
+			[
+				"jens",
+				"jenisSlip"
+			],
+			[
+				"jenja",
+				"jenjang_id"
+			],
+			[
+				"spp_pe",
+				"spp_per_bulan"
+			],
+			[
+				"siswa",
+				"siswa-find"
+			],
+			[
+				"parse",
+				"parse_url"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"jaba",
+				"Jabatan"
+			],
+			[
+				"sty",
+				"style\tAttr"
+			],
+			[
+				"cou",
+				"counter_bump"
+			],
+			[
+				"arr",
+				"array\t$… = array (…)"
+			],
+			[
+				"fre",
+				"frequency"
+			],
+			[
+				"next",
+				"next_run"
+			],
+			[
+				"sou",
+				"source_harvest"
+			],
+			[
+				"html",
+				"html\thtml"
+			],
+			[
+				"jq",
+				"jquery-3"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"style",
+				"style\tAttr"
+			],
+			[
+				"date",
+				"date_now"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"get_ht",
+				"get_http_response_code"
+			],
+			[
+				"str",
+				"strrpos"
+			],
+			[
+				"ckan",
+				"ckanDB"
+			],
+			[
+				"pos",
+				"postgre"
+			],
+			[
+				"or",
+				"organization_list"
+			],
+			[
+				"ec",
+				"echo\techo \"…\""
+			],
+			[
+				"site",
+				"site_url"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"base",
+				"baseUrl"
+			],
+			[
+				"uc",
+				"ucfirst"
+			],
+			[
+				"create",
+				"created_at"
+			],
+			[
+				"order",
+				"order_by"
+			],
+			[
+				"i",
+				"i\tTag"
+			],
+			[
+				"fa",
+				"fa-envelope"
+			],
+			[
+				"vl",
+				"value"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"group",
+				"group_list"
+			],
+			[
+				"g",
+				"group"
+			],
+			[
+				"pro",
+				"production"
+			],
+			[
+				"SORT",
+				"SORT_DESC"
+			],
+			[
+				"orga",
+				"organization"
+			],
+			[
+				"pac",
+				"package_count"
+			],
+			[
+				"displa",
+				"display_name"
+			],
+			[
+				"sho",
+				"show_org"
+			],
+			[
+				"array",
+				"array_slice"
+			],
+			[
+				"data",
+				"data_filter"
+			],
+			[
+				"limit",
+				"limitData"
+			],
+			[
+				"rec",
+				"recentlyDataset"
+			],
+			[
+				"uni",
+				"unique_multidim_array"
+			],
+			[
+				"array_u",
+				"array_unique"
+			],
+			[
+				"tit",
+				"title"
+			],
+			[
+				"for",
+				"foreach\t<?php foreach (…) … <?php endforeach ?>"
+			],
+			[
+				"img",
+				"img_media"
+			],
+			[
+				"fu",
+				"fun\tfunction …"
+			],
+			[
+				"a",
+				"a\t<a>"
+			],
+			[
+				"scri",
+				"script\tTag"
+			],
+			[
+				"strto",
+				"strtoupper"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"if",
+				"if\tif …"
+			],
+			[
+				"e",
+				"eof\tCI - End of file"
+			],
+			[
+				"T",
+				"title"
+			],
+			[
+				"hr",
+				"href\tAttr"
+			],
+			[
+				"_",
+				"_sidebar"
+			],
+			[
+				"_c",
+				"_content"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "controllers/SiteController.php",
+			"settings":
+			{
+				"buffer_size": 3180,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/juliardi/c45/src/C45.php",
+			"settings":
+			{
+				"buffer_size": 8007,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/web.php",
+			"settings":
+			{
+				"buffer_size": 2228,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 64.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"fin",
+				"PHPCompanion:Find Use"
+			],
+			[
+				"find",
+				"PHPCompanion:Find Use"
+			],
+			[
+				"u",
+				"PHPCompanion:Find Use"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"fi",
+				"PHPCompanion:Find Use"
+			],
+			[
+				"use",
+				"PHPCompanion:Find Use"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"htm",
+				"HTMLPrettify: Set `node` Path"
+			],
+			[
+				"preti",
+				"HTMLPrettify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"paca",
+				"Install Package Control"
+			]
+		],
+		"width": 587.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/agusedyc/Git/ml",
+		"/home/agusedyc/Git/ml/vendor",
+		"/home/agusedyc/Git/ml/vendor/juliardi",
+		"/home/agusedyc/Git/ml/vendor/juliardi/c45",
+		"/home/agusedyc/Git/ml/vendor/juliardi/c45/src",
+		"/home/agusedyc/Git/ml/vendor/juliardi/c45/src/Calculator",
+		"/home/agusedyc/Git/ml/web"
+	],
+	"file_history":
+	[
+		"/home/agusedyc/Git/ml/web/uploads/datasets/whether.csv",
+		"/home/agusedyc/Git/ml/vendor/yiisoft/yii2/web/Controller.php",
+		"/home/agusedyc/Git/blog-data/composer.json",
+		"/home/agusedyc/Git/blog-data/frontend/config/main.php",
+		"/home/agusedyc/Git/blog-data/backend/config/main.php",
+		"/home/agusedyc/Git/blog-data/common/config/params.php",
+		"/home/agusedyc/Git/blog-data/common/config/main.php",
+		"/home/agusedyc/Git/ypia/routes/web.php",
+		"/home/agusedyc/Git/ypia/app/Http/Controllers/PembayaranController.php",
+		"/home/agusedyc/Git/ypia/app/PembayaranSpi.php",
+		"/home/agusedyc/Git/ypia/backup-20190401/LaporanController.php",
+		"/home/agusedyc/Git/ypia/.gitignore",
+		"/home/agusedyc/Git/ypia/resources/views/vendor/adminlte/layouts/partials/scripts.blade.php",
+		"/home/agusedyc/Git/ypia/routes/api.php",
+		"/home/agusedyc/Git/ypia/resources/views/laporan/laporan-tahunan.blade.php",
+		"/home/agusedyc/Git/ypia/resources/views/pembayaran/show.blade.php",
+		"/home/agusedyc/Git/ypia/app/Http/Controllers/LaporanController.php",
+		"/home/agusedyc/Git/ypia/vendor/facebook/webdriver/lib/Exception/TimeOutException.php",
+		"/home/agusedyc/Git/ypia/vendor/facebook/webdriver/lib/Remote/RemoteMouse.php",
+		"/home/agusedyc/Git/ypia/.gitattributes",
+		"/home/agusedyc/Git/ypia/app/Uraian.php",
+		"/home/agusedyc/Git/ypia/app/SiswaBulan.php",
+		"/home/agusedyc/Git/ypia/app/PembayaranSpp.php",
+		"/home/agusedyc/Remote/apps_opendata_production/application/controllers/api/Demo.php",
+		"/home/agusedyc/Remote/apps_opendata_production/application/models/Data.php",
+		"/home/agusedyc/Remote/apps_opendata_production/application/controllers/api/Bridge.php",
+		"/home/agusedyc/Remote/apps_opendata_production/sftp-config.json",
+		"/home/agusedyc/Remote/maintenancerpt/views/kerusakan/update.php",
+		"/home/agusedyc/Remote/maintenancerpt/models/Kerusakan.php",
+		"/home/agusedyc/Remote/maintenancerpt/vendor/hscstudio/yii2-mimin/views/user/_search.php",
+		"/home/agusedyc/Remote/maintenancerpt/vendor/hscstudio/yii2-mimin/views/user/_form.php",
+		"/home/agusedyc/Remote/maintenancerpt/vendor/hscstudio/yii2-mimin/models/UserSearch.php",
+		"/home/agusedyc/Remote/maintenancerpt/vendor/hscstudio/yii2-mimin/controllers/UserController.php",
+		"/home/agusedyc/Remote/maintenancerpt/vendor/hscstudio/yii2-mimin/views/user/view.php",
+		"/home/agusedyc/Remote/maintenancerpt/vendor/hscstudio/yii2-mimin/views/user/index.php",
+		"/home/agusedyc/Remote/maintenancerpt/vendor/hscstudio/yii2-mimin/models/User.php",
+		"/home/agusedyc/Remote/maintenancerpt/sftp-config.json",
+		"/home/agusedyc/Remote/maintenancerpt/views/detail-kerusakan/index.php",
+		"/home/agusedyc/Remote/maintenancerpt/controllers/PegawaiController.php",
+		"/home/agusedyc/Remote/maintenancerpt/models/Pegawai.php",
+		"/home/agusedyc/Remote/maintenancerpt/models/PegawaiSearch.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/pegawai/_form.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/pegawai/_search.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/pegawai/view.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/pegawai/create.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/pegawai/index.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/mesin/update.php",
+		"/home/agusedyc/Remote/maintenancerpt/models/KomponenSearch.php",
+		"/home/agusedyc/Remote/maintenancerpt/models/Komponen.php",
+		"/home/agusedyc/Remote/maintenancerpt/models/Gudang.php",
+		"/home/agusedyc/Remote/maintenancerpt/controllers/GudangController.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/gudang/index_stok.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/gudang/create.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/gudang/update.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/gudang/_form.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/gudang/view.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/gudang/index.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/komponen/_search.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/mesin/index.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/mesin/view.php",
+		"/home/agusedyc/Remote/maintenancerpt/controllers/MesinController.php",
+		"/home/agusedyc/Remote/maintenancerpt/models/MesinSearch.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/mesin/_search.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/mesin/_form.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/mesin/create.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/lokasi/index.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/komponen/index.php",
+		"/home/agusedyc/Remote/maintenancerpt/controllers/SiteController.php",
+		"/home/agusedyc/Remote/maintenancerpt/config/params.php",
+		"/home/agusedyc/Remote/maintenancerpt/config/console.php",
+		"/home/agusedyc/Remote/maintenancerpt/config/web.php",
+		"/home/agusedyc/Remote/maintenancerpt/models/User.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/layout-adminlte/layouts/left.php",
+		"/home/agusedyc/Remote/maintenancerpt/vendor/mdmsoft/yii2-admin/controllers/AssignmentController.php",
+		"/home/agusedyc/Remote/maintenancerpt/vendor/mdmsoft/yii2-admin/models/User.php",
+		"/home/agusedyc/Remote/maintenancerpt/config/db.php",
+		"/home/agusedyc/Remote/maintenancerpt/models/UserDefault.php",
+		"/home/agusedyc/Remote/maintenancerpt/views/layout-sba2/site/index.php",
+		"/home/agusedyc/.config/sublime-text-3/Packages/User/SFTP.errors.log",
+		"/home/agusedyc/Remote/sds_jategprov_dev_local/models/Instansi.php",
+		"/home/agusedyc/Remote/sds_jategprov_dev_local/views/aplikasi/create.php",
+		"/home/agusedyc/Remote/sds.jatengprov.dev/models/StrukturData.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Harvesting.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/api/Visitor.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/data/skpd.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Dashboard.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/admin/dashboard.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/data/cetakkabkota.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/api/Demo.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/template.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/home/login.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/template/dashboard/navBar.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Auth.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/sftp-config.json",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/api/Example.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/ckan/template.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/template/dashboard/sideBar.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/routes.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/template/header.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/template.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Document.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/frontend/dHomepage.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/database.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/admin/kabkota.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Welcome.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/home/home.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/frontend/Download.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/config.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/models/Data.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/home/galeri.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/home/infografis.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/ckan/download/index.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Media.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/admin/media.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/assets/themes/opendata/js/main.js",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/libraries/Template.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/template/sidebar.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/template/footer.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/ckan/template/footer.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/frontend/Homepage.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/ckan/template/navbar.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/autoload.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/errors/html/404.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/ckan/galery/index.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/home/tentang.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/home/organisasi.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/download/index.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/errors/html/error_404.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"splitCriterion"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "controllers/SiteController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2962,
+								2962
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1514.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "vendor/juliardi/c45/src/C45.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 8007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								518,
+								518
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1548,
+								1548
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 39.0
+	},
+	"pinned_build_system": "",
+	"project": "ml-data.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"common/confi",
+				"common/config/main.php"
+			],
+			[
+				"spi",
+				"app/Http/Controllers/SpiController.php"
+			],
+			[
+				"web",
+				"routes/web.php"
+			],
+			[
+				"pembaya",
+				"app/Http/Controllers/PembayaranController.php"
+			],
+			[
+				"pembayaran",
+				"app/PembayaranSpi.php"
+			],
+			[
+				"laporancon",
+				"app/Http/Controllers/LaporanController.php"
+			],
+			[
+				"LAPORA",
+				"backup-20190401/LaporanController.php"
+			],
+			[
+				"",
+				"resources/views/laporan/laporan-tahunan-uraian.blade.php"
+			],
+			[
+				"scri",
+				"resources/views/vendor/adminlte/layouts/partials/scripts.blade.php"
+			],
+			[
+				"script",
+				"resources/views/vendor/adminlte/layouts/partials/scripts.blade.php"
+			],
+			[
+				"resources/view/script",
+				"resources/views/vendor/adminlte/layouts/partials/scripts.blade.php"
+			],
+			[
+				"laporan/laporan",
+				"resources/views/laporan/laporan-tahunan.blade.php"
+			],
+			[
+				"laporan-t",
+				"resources/views/laporan/laporan-tahunan.blade.php"
+			],
+			[
+				"laporan",
+				"app/Http/Controllers/LaporanController.php"
+			],
+			[
+				"pembayaran/s",
+				"resources/views/pembayaran/show.blade.php"
+			],
+			[
+				"pembayara",
+				"app/Http/Controllers/PembayaranController.php"
+			],
+			[
+				"route/",
+				"routes/web.php"
+			],
+			[
+				"route/we",
+				"routes/web.php"
+			],
+			[
+				"web/route",
+				"vendor/facebook/webdriver/lib/Exception/TimeOutException.php"
+			],
+			[
+				"web/rou",
+				"vendor/facebook/webdriver/lib/Remote/RemoteMouse.php"
+			],
+			[
+				"ura",
+				"app/Uraian.php"
+			],
+			[
+				"pembayaranspp",
+				"app/PembayaranSpp.php"
+			],
+			[
+				"user/_f",
+				"vendor/hscstudio/yii2-mimin/views/user/_form.php"
+			],
+			[
+				"view",
+				"vendor/hscstudio/yii2-mimin/views/user/view.php"
+			],
+			[
+				"user/inde",
+				"vendor/hscstudio/yii2-mimin/views/user/index.php"
+			],
+			[
+				"_form",
+				"vendor/hscstudio/yii2-mimin/views/user/_form.php"
+			],
+			[
+				"site",
+				"controllers/SiteController.php"
+			],
+			[
+				"gudang/u",
+				"views/gudang/update.php"
+			],
+			[
+				"guda",
+				"models/Gudang.php"
+			],
+			[
+				"lef",
+				"views/layout-adminlte/layouts/left.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Remote/ypia/ypiasmg.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 319.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
