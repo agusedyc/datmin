@@ -1,0 +1,319 @@
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	background: lightsteelblue;
+}
+.ui-accordion .ui-accordion-header {
+	outline: none;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+	border: 0;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+	border-bottom-right-radius: 3px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+	border-bottom-left-radius: 3px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.ui-widget-content {
+	border: 0;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	border: 0;
+}
+img.ikon {
+	display: inline-block;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+button .ikon {
+	margin-top: 2px;
+	margin-bottom: -2px;
+}
+input, select, textarea {
+	border: 1px solid #ccc;
+	outline: none;
+	padding: 2px;
+	padding-left: 5px;
+	height: 20px;
+	font-family: Tahoma;
+	text-transform: uppercase;
+}
+button {
+	height: 25px;
+	margin: 0;
+	display: inline-block;
+	padding: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+textarea {
+	height: auto;
+}
+.detil {
+	width: 100%;
+	border-spacing: 2px;
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+}
+.detil tr {
+	vertical-align: top;
+}
+.detil th {
+	background: #D3DCE3;
+	background:#4CAF50;
+	padding: 5px;
+	height: 25px;
+	vertical-align: middle;
+	padding-left: 3px;
+	text-transform:capitalize;
+}
+.detil td {
+	padding: 4px;
+	background: lavender;
+	text-transform: uppercase;
+}
+.detil tr:nth-child(odd) td {
+	background: #f5f5f5;
+	color: green;
+}
+.detil tr:hover td {
+	background: #CFC;
+}
+fieldset {
+	border: 0px solid red;
+	padding: 5px;
+	margin: 0;
+	margin-top: 10px;
+}
+legend {
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-right: 5px;
+}
+form {
+	margin: 0;
+	padding: 0;
+}
+form.cari {
+	border-bottom: 0px solid #ccc;
+	background: inherit;
+}
+input:focus, select:focus, textarea:focus {
+	background: #FFC;
+}
+.cari input {
+	display: inline-table;
+	background: url(img/b_search.png) left #FFF no-repeat;
+	background-position: 10px;
+	text-indent: 28px;
+	margin-left: 2px;
+}
+.cari input:focus {
+	text-indent: 28px;
+	display: inline-table;
+	background: url(img/b_search.png) left #FFC no-repeat;
+	background-position: 10px;
+}
+a {
+	text-decoration: none;
+	color: green;
+}
+a:hover, a:focus {
+	color: red;
+	outline: none;
+}
+.cari a img {
+	margin-bottom: -2px;
+}
+form table.fo {
+	margin-top: 10px;
+}
+form table.fo th {
+	min-width: 120px;
+	text-align: right;
+	padding-right: 10px;
+	font-weight: normal;
+}
+form table.fo hr {
+	border: 0;
+	border-bottom: 1px solid green;
+}
+.tampil legend {
+	display: block;
+	border-bottom: 1px solid green;
+	margin-left: 0px;
+}
+select {
+	padding-top: 0;
+	appearance: normal;
+}
+input[type="number"] {
+	-moz-appearance: none;
+	/*for chrome*/
+	-webkit-appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.a_detil {
+	cursor: pointer;
+}
+.gta {
+	border: 1px solid green;
+	width: 340px;
+}
+#ed_1 {
+	width: 100%;
+}
+#bagi2 {
+	width: 100%;
+}
+#bagi2 .a {
+}
+#bagi2 .b {
+	width: 300px;
+}
+#bagi2 #ed_1 {
+	border-left: 1px solid #ccc;
+}
+.detil tr.terpilih td {
+	background: #FC9;
+}
+#btn2, #fo2 {
+	display: none;
+}
+.detil tr th.bawah {
+	padding: 0;
+	height: 10px;
+	border-bottom: 1px dotted green;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ margin: 0;
+}
+form table tr {
+	vertical-align: text;
+}
+form table tr th{
+	padding-top:5px;	
+}
+select {
+	padding-left: 1px;
+}
+.inte {
+}
+
+form .fo textarea:focus,
+form .fo input:focus{border-bottom:1px solid green;}
+select{
+	padding:2px; height:25px;	
+}
+*[readonly],*[readonly]:focus{
+	background:#f5f5f5;
+	border-bottom:1px solid #ccc;	
+}
+.notif{
+	text-transform:capitalize;
+	color:red;
+	font-size:12px;	
+}
+*[type=number]{width:auto;}
+.detil tr.isian td{
+	padding:0;	
+}
+* input.w_a{
+	width:98%;	
+}
+a.a_tambah{
+    border: 1px solid green;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;	
+}
+a.a_tambah:hover,a.a_tambah:focus{
+	background:#9F6;	
+}
+.w_300{
+	width:300px;	
+}
+.w_200{
+	width:200px;	
+}
+form td b{text-transform:capitalize;}
+#main{
+	margin:auto;
+	margin-left:10px;
+	margin-right:10px;
+	width:96%;	
+}
+#petas{
+	width:99%;
+	margin:auto;
+	border:0px solid red;	
+}
+.w{
+	width:170px;
+	height:120px;	
+}
+table.s{
+	width:auto;
+	margin-right:20px;
+	margin-bottom:20px;	
+}
+
+#opsi{
+	min-height:25px;
+	margin-top:20px;
+	border-top:1px solid #333;	
+	border-bottom:1px solid #333;
+	border-left:1px solid #333;
+	border-right:1px solid #333;
+	background:#FC9;
+}
+div.isi{
+	display:none;	
+}
+#opsi li{
+	background:#cf9;
+	vertical-align:middle;
+	min-height:20px;
+	list-style:none;
+	float:left;
+	border-right:1px solid #333;
+}
+#opsi li a:hover,#opsi li a.aktif{
+	background:#4CAF50;
+	color:white;	
+}
+#opsi li a{
+	display:block;
+	padding-top:5px;
+	padding-bottom:6px;
+	padding-left:12px;
+	padding-right:12px;	
+}
+img.loader{
+	float:right;
+	margin-top:0px;
+	color:green;
+	display:none;
+	height:25px;
+	widows:25px;	
+}
+#btnsimpan{display:none;}

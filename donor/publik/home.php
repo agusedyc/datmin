@@ -1,0 +1,5 @@
+<h2>Home</h2>
+            <p>
+            	Ini merupakan halaman utama dari aplikasi. Silahkan ubah isinya di <b>publik/home.php</b>. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. 
+            </p>
+            <p>Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. Ini cuma sebagai contoh saja. </p>
