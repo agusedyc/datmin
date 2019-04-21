@@ -321,14 +321,6 @@
 			}
 		},
 		{
-			"file": "vendor/juliardi/c45/src/C45.php",
-			"settings":
-			{
-				"buffer_size": 8007,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "config/web.php",
 			"settings":
 			{
@@ -414,16 +406,16 @@
 	},
 	"expanded_folders":
 	[
-		"/home/agusedyc/Git/ml",
-		"/home/agusedyc/Git/ml/vendor",
-		"/home/agusedyc/Git/ml/vendor/juliardi",
-		"/home/agusedyc/Git/ml/vendor/juliardi/c45",
-		"/home/agusedyc/Git/ml/vendor/juliardi/c45/src",
-		"/home/agusedyc/Git/ml/vendor/juliardi/c45/src/Calculator",
-		"/home/agusedyc/Git/ml/web"
+		"/home/agusedyc/Git/datmin"
 	],
 	"file_history":
 	[
+		"/home/agusedyc/Git/datmin/laradock/nginx/Dockerfile",
+		"/home/agusedyc/Git/datmin/laradock/nginx/sites/yii.conf",
+		"/home/agusedyc/Git/datmin/docker/nginx/conf.d/apps.conf",
+		"/home/agusedyc/Git/datmin/Dockerfile",
+		"/home/agusedyc/Git/datmin/docker/pool.d/20-system.pool.conf",
+		"/home/agusedyc/Git/datmin/docker-compose.yml",
 		"/home/agusedyc/Git/ml/web/uploads/datasets/whether.csv",
 		"/home/agusedyc/Git/ml/vendor/yiisoft/yii2/web/Controller.php",
 		"/home/agusedyc/Git/blog-data/composer.json",
@@ -545,13 +537,7 @@
 		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/ckan/template/footer.php",
 		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/frontend/Homepage.php",
 		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/ckan/template/navbar.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/autoload.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/errors/html/404.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/ckan/galery/index.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/home/tentang.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/home/organisasi.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/download/index.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/errors/html/error_404.php"
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/autoload.php"
 	],
 	"find":
 	{
@@ -562,6 +548,7 @@
 		"height": 98.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -569,6 +556,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sds",
+			"sds_",
 			"splitCriterion"
 		],
 		"highlight": true,
@@ -577,6 +566,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"apps_"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -587,7 +577,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -603,41 +593,8 @@
 						"selection":
 						[
 							[
-								2962,
-								2962
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1514.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "vendor/juliardi/c45/src/C45.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 8007,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								518,
-								518
+								2969,
+								2969
 							]
 						],
 						"settings":
@@ -657,7 +614,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "config/web.php",
 					"semi_transient": false,
 					"settings":
@@ -683,10 +640,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 336.0,
+						"translation.y": 280.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

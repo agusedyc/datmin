@@ -18,7 +18,9 @@
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.1.0",
-        "juliardi/c45": "*"
+        "juliardi/c45": "*",
+        "ruskid/yii2-csv-importer": "dev-master",
+        "phpoffice/phpspreadsheet": "^1.6"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

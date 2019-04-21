@@ -12,9 +12,15 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
+        'c45' => [
+         
+            'class' => 'app\components\C45',
+
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'FsC35T3YQW8jb-6kcaKiJHASWJOkb57A',
+            // 'baseurl' => '/datmin',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
