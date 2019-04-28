@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"array",
+				"array_splice"
+			],
+			[
 				"pembaya",
 				"pembayaran_spi"
 			],
@@ -224,10 +228,6 @@
 				"show_org"
 			],
 			[
-				"array",
-				"array_slice"
-			],
-			[
 				"data",
 				"data_filter"
 			],
@@ -312,19 +312,38 @@
 	"buffers":
 	[
 		{
-			"file": "controllers/SiteController.php",
+			"file": "config/web.php",
 			"settings":
 			{
-				"buffer_size": 3180,
+				"buffer_size": 2353,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "config/web.php",
+			"file": "web/.htaccess",
 			"settings":
 			{
-				"buffer_size": 2228,
+				"buffer_size": 199,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "RewriteEngine On RewriteBase /"
+			}
+		},
+		{
+			"file": "components/C45.php",
+			"settings":
+			{
+				"buffer_size": 7682,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "controllers/SiteController.php",
+			"settings":
+			{
+				"buffer_size": 7544,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -341,6 +360,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"us",
+				"PHPCompanion:Find Use"
+			],
 			[
 				"fin",
 				"PHPCompanion:Find Use"
@@ -406,10 +429,18 @@
 	},
 	"expanded_folders":
 	[
-		"/home/agusedyc/Git/datmin"
+		"/home/agusedyc/Git/datmin",
+		"/home/agusedyc/Git/datmin/custom.cnf",
+		"/home/agusedyc/Git/datmin/uploads",
+		"/home/agusedyc/Git/datmin/uploads/datasets",
+		"/home/agusedyc/Git/datmin/web"
 	],
 	"file_history":
 	[
+		"/home/agusedyc/Git/datmin/components/C45.php",
+		"/home/agusedyc/Git/datmin/config/web.php",
+		"/home/agusedyc/Git/datmin/controllers/SiteController.php",
+		"/home/agusedyc/Git/datmin/web/.htaccess",
 		"/home/agusedyc/Git/datmin/laradock/nginx/Dockerfile",
 		"/home/agusedyc/Git/datmin/laradock/nginx/sites/yii.conf",
 		"/home/agusedyc/Git/datmin/docker/nginx/conf.d/apps.conf",
@@ -533,15 +564,11 @@
 		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/assets/themes/opendata/js/main.js",
 		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/libraries/Template.php",
 		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/template/sidebar.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/template/footer.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/ckan/template/footer.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/frontend/Homepage.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/ckan/template/navbar.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/autoload.php"
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/template/footer.php"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -577,24 +604,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "controllers/SiteController.php",
+					"file": "config/web.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3180,
+						"buffer_size": 2353,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2969,
-								2969
+								386,
+								386
 							]
 						],
 						"settings":
@@ -610,24 +637,85 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "config/web.php",
+					"file": "web/.htaccess",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2228,
+						"buffer_size": 199,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1548,
-								1548
+								190,
+								190
+							]
+						],
+						"settings":
+						{
+							"auto_name": "RewriteEngine On RewriteBase /",
+							"incomplete_sync": null,
+							"syntax": "Packages/ApacheConf/ApacheConf.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "components/C45.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "controllers/SiteController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7544,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3986,
+								3986
 							]
 						],
 						"settings":
@@ -640,10 +728,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 280.0,
+						"translation.y": 1871.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -651,7 +739,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -692,7 +780,7 @@
 	"project": "ml-data.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
