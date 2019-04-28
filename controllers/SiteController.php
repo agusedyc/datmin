@@ -166,6 +166,11 @@ class SiteController extends Controller
         }
         $attributes = $changeKeyArray;
         $data = array_splice($sheetData,1);
+        foreach ($data as $key => $value) {
+            $dataType[] = $this->setTipe($value,5);
+
+
+        }
 
         // Import Algoritma 
         // include("c45.php");
@@ -177,7 +182,7 @@ class SiteController extends Controller
         $c45 = Yii::$app->c45;
 
         // Set data dan atribut
-        $c45->setData($data)->setAttributes($attributes);
+        $c45->setData($dataType)->setAttributes($attributes);
         // Hitung menggunakan data training
         $c45->hitung();
 
@@ -185,16 +190,18 @@ class SiteController extends Controller
 
         // $data_testing = ['rainy', '35', 'high', 'false'];
         // 27,Bp,50,12.8,110/80,Wanita,Boleh
-        $data_testing = ['27','Bp','50','12.8','110/80','Wanita'];
-        echo $c45->predictDataTesting($data_testing);
+        // $data_testing = ['27','B','50','12,8','110/80','Wanita'];
+        // echo $c45->predictDataTesting($data_testing);
         // Luaran diatas akan menghasilkan jawaban Yes
 
         // Sedangkan untuk melihat rule yang dihasilkan dari data set yang telah diberikan ialah dengan menggunakan perintah sebagai berikut:
-        // $c45->printRules();
+        $c45->printRules();
 
-        echo '<pre>';
-        print_r($sheetData);
-        echo '</pre>';
+        // echo '<pre>';
+        // print_r($dataType);
+        // echo '<br>';
+        // print_r(var_dump($dataType));
+        // echo '</pre>';
 
 
 
@@ -208,6 +215,15 @@ class SiteController extends Controller
         // return $this->render('contact', [
         //     'model' => $model,
         // ]);
+    }
+
+    function setTipe($arr='',$count='')
+    {
+        for ($i = 0; $i < $count; $i++) {
+            settype($arr[$i], "string");
+        }
+
+        return $arr;
     }
 
     /**
@@ -236,11 +252,11 @@ class SiteController extends Controller
 
         // return $this->render('about');
         // $filename = Yii::$app->basePath.'/uploads/datasets/whether.csv';
-        // $c45 = new C45([
-        //         'targetAttribute' => 'play',
-        //         'trainingFile' => $filename,
-        //         'splitCriterion' => C45::SPLIT_GAIN,
-        //     ]);
+        $c45 = new C45([
+                'targetAttribute' => 'play',
+                'trainingFile' => $filename,
+                'splitCriterion' => C45::SPLIT_GAIN,
+            ]);
 
         // $tree = $c45->buildTree();
         // $treeString = $tree->toString();
