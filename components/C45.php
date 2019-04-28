@@ -108,13 +108,13 @@ class C45 extends Component
                     $labels[$indexAttribute][$case] = $nilai_default;
                 }
                 $leafs[$indexAttribute][$case] = $entropyAttribute;
-                echo $case." Entropy ", $entropyAttribute , "<br>";
+                // echo $case." Entropy ", $entropyAttribute , "<br>";
                 $lx += $jumlah_case/$jumlah_data*$entropyAttribute;
 
             }
             $gain =  $entropy_total - $lx;
             $gains[$indexAttribute] = $gain;
-            echo "Gain " . $gain, "<br>";
+            // echo "Gain " . $gain, "<br>";
 
 
         }
@@ -130,26 +130,26 @@ class C45 extends Component
             ];
         }
 
-        echo "<h1>Atribut root ", $attributes[$root], "</h1>";
+        // echo "<h1>Atribut root ", $attributes[$root], "</h1>";
         foreach($leafs[$root] as $label => $entropy) {
-            echo "<h1 style='color:red'>$label $entropy</h1>";
+            // echo "<h1 style='color:red'>$label $entropy</h1>";
             if($entropy == 0) {
                 $this->rules[$root][$label] = [
                     "kasus" => $label, 
                     "nilai" => $labels[$root][$label]
                 ];
-                echo "<h1 style='color:blue'> $root ". $label . ' '.$labels[$root][$label], "</h1>";
+                // echo "<h1 style='color:blue'> $root ". $label . ' '.$labels[$root][$label], "</h1>";
             }
 
             if($entropy > 0 && $entropy <= 1) {
 
                 if ($base != null) {
-                    echo "Roote ".$root;
+                    // echo "Roote ".$root;
                     $this->rules[$root][$label] = [
                         "kasus" => $label.'-', "forward" => $base+1
 
                     ];
-                    echo "<hr>", $root;
+                    // echo "<hr>", $root;
                 } else {
                     $this->rules[$root][$label] = $label;
                 }

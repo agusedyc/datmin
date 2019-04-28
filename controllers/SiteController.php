@@ -1,5 +1,5 @@
 <?php
-
+// Sumber http://rofilde.web.id/post/84
 namespace app\controllers;
 
 use C45\C45;
@@ -107,6 +107,25 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
+        $dataXA  = [
+            ["outlook", "temperature", "humadity", "windy","res"],
+            ["sunny", 'hot', 'high', 'false', 'no'],
+            ["sunny", 'hot', 'high', 'true', 'no'],
+            ["cloudy", 'hot', 'high', 'false', 'yes'],
+            ["rainy", 'mild', 'high', 'false', 'yes'],
+            ["rainy", 'cool', 'normal', 'false', 'yes'],
+            ["rainy", 'cool', 'normal', 'true', 'yes'],
+            ["cloudy", 'cool', 'normal', 'true', 'yes'],
+            ["sunny", 'mild', 'high', 'false', 'no'],
+            ["sunny", 'cool', 'normal', 'false', 'yes'],
+            ["rainy", 'mild', 'normal', 'false', 'yes'],
+            ["sunny", 'mild', 'normal', 'true', 'yes'],
+            ["cloudy", 'mild', 'high', 'true', 'yes'],
+            ["cloudy", 'hot', 'normal', 'false', 'yes'],
+            ["rainy", 'mild', 'high', 'true', 'no'],
+
+        ];
+
         $dataX  = [
             ["sunny", 'hot', 'high', 'false', 'no'],
             ["sunny", 'hot', 'high', 'true', 'no'],
@@ -143,62 +162,38 @@ class SiteController extends Controller
 
         ];
 
-        $inputFileName = Yii::$app->basePath.'/uploads/datasets/data_donor_darah_2.csv';
-        $inputFileType = IOFactory::identify($inputFileName);
-
-        $reader = new \PhpOffice\PhpSpreadsheet\Reader\Csv();
-        $spreadsheet = $reader->load($inputFileName);     
-        $sheetData = $spreadsheet->getActiveSheet()->toArray();
-
-        // Dataset Golongan Datrah
-        // echo '<pre>';
-        // echo 'Title';
-        // print_r($sheetData[0]);
-        // echo '<br>';
-        // echo 'Data';
-        // print_r(array_splice($sheetData,1));
-        // echo '</pre>';
-
+        
+        // $sheetData = $this->loadCsv('/uploads/datasets/data_donor_darah_tensi.csv');
+        $sheetData = $dataXA;
         // Nama Atribut data
         // $attributes = [1 => "outlook", 2 => "temperature", 3 => "humadity", 4 => 'windy'];
-        foreach ($sheetData[0] as $key => $value) {
-            $changeKeyArray[ $key+1] = $value;
-        }
-        $attributes = $changeKeyArray;
-        $data = array_splice($sheetData,1);
-        foreach ($data as $key => $value) {
-            $dataType[] = $this->setTipe($value,5);
-
-
-        }
-
-        // Import Algoritma 
-        // include("c45.php");
-
-        //Buat instance 
-
-        // $c45 = new C45;
+        $attributes = $this->getAttribute($sheetData);
+        // $datacsv = $this->getData($sheetData);
+        // $data = $this->getData($sheetData);
+        $data = $this->dataType($sheetData,'string');
+        
 
         $c45 = Yii::$app->c45;
 
         // Set data dan atribut
-        $c45->setData($dataType)->setAttributes($attributes);
+        $c45->setData($data)->setAttributes($attributes);
         // Hitung menggunakan data training
         $c45->hitung();
 
         // Uji Coba dengan menggunakan 1 data testing sebagai berikut:
 
-        // $data_testing = ['rainy', '35', 'high', 'false'];
-        // 27,Bp,50,12.8,110/80,Wanita,Boleh
-        // $data_testing = ['27','B','50','12,8','110/80','Wanita'];
-        // echo $c45->predictDataTesting($data_testing);
+        // $data_testing = ['rainy', '35', 'high', 'false','yes'];
+        $data_testing = ['rainy', 'hot', 'high', 'false'];
+        // $data_testing = ['27','B','50','12,8','110','80','Wanita','Boleh'];
+        // $data_testing = ['27','B','50','12,8','110','80','Wanita'];
+        echo $c45->predictDataTesting($data_testing);
         // Luaran diatas akan menghasilkan jawaban Yes
 
         // Sedangkan untuk melihat rule yang dihasilkan dari data set yang telah diberikan ialah dengan menggunakan perintah sebagai berikut:
         $c45->printRules();
 
         // echo '<pre>';
-        // print_r($dataType);
+        // print_r($attributes);
         // echo '<br>';
         // print_r(var_dump($dataType));
         // echo '</pre>';
@@ -217,10 +212,46 @@ class SiteController extends Controller
         // ]);
     }
 
-    function setTipe($arr='',$count='')
+    function loadCsv($pathCsv='')
     {
-        for ($i = 0; $i < $count; $i++) {
-            settype($arr[$i], "string");
+        $inputFileName = Yii::$app->basePath.$pathCsv;
+        $inputFileType = IOFactory::identify($inputFileName);
+
+        $reader = new \PhpOffice\PhpSpreadsheet\Reader\Csv();
+        $spreadsheet = $reader->load($inputFileName);     
+        return $sheetData = $spreadsheet->getActiveSheet()->toArray();
+    }
+
+    function getAttribute($sheetData='')
+    {
+        foreach ($sheetData[0] as $key => $value) {
+            $changeKeyArray[$key+1] = $value;
+        }
+        // Delete Last Array Attributes cause Its Result
+        $remove_last_array = array_pop($changeKeyArray);
+        return $changeKeyArray;
+    }
+
+    function getData($sheetData='')
+    {
+        // Memisahkan Nama Field pada baris 1 dengan Data pada baris selanjutnya;
+        $data = array_splice($sheetData,1);
+        return $data;
+    }
+
+    function dataType($dataset='',$typeData='')
+    {
+        foreach ($dataset as $key => $value) {
+            $dataType[] = $this->setTipe($value,$typeData);
+        }   
+
+        return $dataType;
+    }
+
+    function setTipe($arr='',$typeData='')
+    {
+        for ($i = 0; $i < count($arr); $i++) {
+            settype($arr[$i], $typeData);
         }
 
         return $arr;
