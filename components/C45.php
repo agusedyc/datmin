@@ -219,6 +219,7 @@ class C45 extends Component
     public function printRules()
     {
         $this->_printRules($this->finalRules);
+        // die();
     }
 
     public function predictDataTesting(array $data = []) 

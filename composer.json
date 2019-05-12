@@ -20,7 +20,8 @@
         "yiisoft/yii2-swiftmailer": "~2.1.0",
         "juliardi/c45": "*",
         "ruskid/yii2-csv-importer": "dev-master",
-        "phpoffice/phpspreadsheet": "^1.6"
+        "phpoffice/phpspreadsheet": "^1.6",
+        "kartik-v/yii2-widget-switchinput": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
