@@ -1,31 +1,39 @@
 version: '3.2'
 
 services:
-
   php:
     image: yiisoftware/yii2-php:7.2-apache
     volumes:
       - ~/.composer-docker/cache:/root/.composer/cache:delegated
-      - ./:/app:delegated
+      - .:/app:delegated
     ports:
       - 30080:80
+    links:
+      - mariadb
+    # environment:
+    #   - COMPOSE_CONVERT_WINDOWS_PATHS=1
 
   mariadb:
     image: mariadb:10.3
-    volumes:
-      - ./docker/dbdata:/var/lib/mysql
+    # volumes:
+    #   - ./docker/dbdata:/var/lib/mysql
     ports:
       - 33306:3306
     restart: always
     environment:
-      # - TZ=Asia/Jakarta
+      - TZ=Asia/Jakarta
       # - MYSQL_USER=apps_data
       # - MYSQL_PASSWORD=pass_apps_data
       - MYSQL_ROOT_PASSWORD=admin_db
       # - MYSQL_DATABASE=apps_data
 
-  adminer:
-    image: adminer
-    restart: always
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      - mariadb
+    # links:
+    #   - mariadb:db
     ports:
-      - 38080:8080
+      - 38181:80
+    environment:
+      - PMA_HOST=mariadb
