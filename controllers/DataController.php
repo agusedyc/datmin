@@ -275,4 +275,10 @@ class DataController extends Controller
             // 'attribute' => $this->getAttributeGridView($dataset),
         ]);
     }
+
+    public function actionTraining($value='')
+    {
+            
+    }
+
 }
