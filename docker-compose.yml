@@ -15,8 +15,8 @@ services:
 
   mariadb:
     image: mariadb:10.3
-    # volumes:
-    #   - ./docker/dbdata:/var/lib/mysql
+    volumes:
+      - ./docker/dbdata:/var/lib/mysql
     ports:
       - 33306:3306
     restart: always
