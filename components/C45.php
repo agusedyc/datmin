@@ -219,6 +219,9 @@ class C45 extends Component
     public function printRules()
     {
         $this->_printRules($this->finalRules);
+        // echo '<pre>';
+        // print_r($this->finalRules);
+        // echo '</pre>';
         // die();
     }
 
