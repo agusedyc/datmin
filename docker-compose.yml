@@ -16,7 +16,8 @@ services:
   mariadb:
     image: mariadb:10.3
     volumes:
-      - ./docker/dbdata:/var/lib/mysql
+      # - ./docker/dbdata:/var/lib/mysql
+      - apps_persistent:/var/lib/mysql
     ports:
       - 33306:3306
     restart: always
@@ -25,15 +26,16 @@ services:
       # - MYSQL_USER=apps_data
       # - MYSQL_PASSWORD=pass_apps_data
       - MYSQL_ROOT_PASSWORD=admin_db
-      # - MYSQL_DATABASE=apps_data
+      - MYSQL_DATABASE=apps_docker
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     depends_on:
       - mariadb
-    # links:
-    #   - mariadb:db
     ports:
       - 38181:80
     environment:
       - PMA_HOST=mariadb
+      
+volumes:
+  apps_persistent:
