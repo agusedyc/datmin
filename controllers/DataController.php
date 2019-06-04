@@ -276,8 +276,88 @@ class DataController extends Controller
         ]);
     }
 
-    public function actionTraining($value='')
+    public function dropdownLists($data,$attributes,$field)
     {
+        // unset($data[0]);
+        foreach ($data as $key => $value) {
+           $columb[] = $value[array_search($field, $attributes)];
+           $listColumb = array_unique($columb);
+       }
+
+       foreach ($listColumb as $key => $valColom) {
+           $dataDropdown[] = [
+                'id' => $key,
+                'value' => $valColom,
+           ];
+       }
+
+       return $dataDropdown;
+    }
+
+    public function formFields($data,$attributes)
+    {
+        foreach ($attributes as $key => $attrValue) {
+            $formFields[] = $this->dropdownLists($data,$attributes,$attrValue);
+        }
+        // delete Label column
+        unset($formFields[count($formFields)-1]);
+        return $formFields;
+    }
+
+    public function actionTesting($value='')
+    {
+
+        $model = Data::find()->where(['status'=>'1'])->one();
+        $sheetData = $this->loadCsv('/uploads/datasets/'.$model->file);
+        // Nama Atribut data
+        $attributes = $this->getAttribute($sheetData);
+        $data = $this->dataType($sheetData,'string');
+        
+
+        $formData = $this->formFields($data,$data[0]);
+        
+
+        if ($postData = Yii::$app->request->post()) {
+            unset($postData['_csrf']);
+            $c45 = Yii::$app->c45;
+            // Set data dan atribut
+            $c45->setData($data)->setAttributes($attributes);
+            // Hitung menggunakan data training
+            $c45->hitung();
+            // $data = array_pop($dataString);
+            $values = array_values($postData);
+            $result = $c45->predictDataTesting($values);
+            // echo '<pre>';
+            // print_r($result);
+            // echo '<br>';
+            // print_r($postData);
+            // echo '<br>';
+            // print_r(array_values($postData));
+            // echo '</pre>';
+            return $this->render('testing',[
+                'attributes' => $attributes,
+                'dataList' => $formData,
+                'result' => $result,
+            ]);
+        }else {
+            return $this->render('testing',[
+                'attributes' => $attributes,
+                'dataList' => $formData,
+                'result' => $result='',
+            ]);
+        }
+
+
+        // echo '<pre>';
+        // print_r($dataList);
+        // echo '<br>';
+        // print_r($attributes);
+        // echo '<br>';
+        // print_r($data);
+        // echo '</pre>';
+        
+
+        
             
     }
 
