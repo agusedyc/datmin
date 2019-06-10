@@ -26,12 +26,23 @@ $this->params['breadcrumbs'][] = $this->title;
         ]) ?>
     </p>
 
-    <?= DetailView::widget([
-        'model' => $model,
-        'attributes' => [
-            'id',
-            'data_testing:ntext',
-        ],
-    ]) ?>
+    <?php 
+
+        // echo '<pre>';
+        // print_r($model->data_testing);
+        // echo '</pre>';
+     ?>
+     <table class="table table-striped table-bordered detail-view">
+         <!-- <caption>table title and/or explanatory text</caption> -->
+     <?php 
+     $datas = json_decode($model->data_testing);
+     foreach ($datas as $key => $value): ?>
+        <tr>
+            <td><?php echo '<h5>'.ucwords(str_replace('_', ' ',$key)).'</h5>'; ?></td>
+            <td>:</td>
+            <td><?= $value ?></td>
+        </tr> 
+     <?php endforeach ?>
+</table>
 
 </div>
