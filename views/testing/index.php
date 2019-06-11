@@ -28,22 +28,29 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             // 'id',
-            'data_testing:ntext',
-            //  [
-            //     'attribute'=>'data_testing',
-            //     'label'=>'Data Testing',
-            //     'value' => function($data){
-            //         $formData = json_decode($data->data_testing);
-            //         foreach ($formData as $key => $value) {
-            //             $var = $value;
-            //         }
+            // 'data_testing:ntext',
+             [
+                'attribute'=>'data_testing',
+                'label'=>'Data Testing',
+                'format'=> 'raw',
+                'value' => function($data){
+                    $formData = json_decode($data->data_testing);
+                    $no=1;
+                    foreach ($formData as $key => $value) {
+                        $var[] = "(".$no++."). ".ucwords(str_replace('_', ' ',$key))." : ". $value."<br>";
+                    }
+                    // $format = $formData->data_nama." - ".$formData->data_nama;
+                    $format = join(" ",$var);
+                    return Html::a($format,['testing/view','id'=>$data->id]);
 
-            //         return $var;
+                }
+            ],
 
-            //     }
-            // ],
-
-            ['class' => 'yii\grid\ActionColumn'],
+            // ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template'=>'{delete}' 
+            ]
         ],
     ]); ?>
 
