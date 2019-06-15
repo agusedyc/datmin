@@ -340,12 +340,31 @@
 	"buffers":
 	[
 		{
-			"file": "components/C45.php",
+			"contents": "<?php\n\nnamespace app\\models;\n\nclass User extends \\yii\\base\\BaseObject implements \\yii\\web\\IdentityInterface\n{\n    public $id;\n    public $username;\n    public $password;\n    public $authKey;\n    public $accessToken;\n\n    private static $users = [\n        '100' => [\n            'id' => '100',\n            'username' => 'Anita',\n            'password' => '337413101119001',\n            'authKey' => 'test100key',\n            'accessToken' => '100-token',\n        ],\n        '101' => [\n            'id' => '101',\n            'username' => 'Eny',\n            'password' => '337407100619001',\n            'authKey' => 'test101key',\n            'accessToken' => '101-token',\n        ],\n        '102' => [\n            'id' => '102',\n            'username' => 'admin',\n            'password' => 'admin',\n            'authKey' => 'test102key',\n            'accessToken' => '102-token',\n        ],\n    ];\n\n\n    /**\n     * {@inheritdoc}\n     */\n    public static function findIdentity($id)\n    {\n        return isset(self::$users[$id]) ? new static(self::$users[$id]) : null;\n    }\n\n    /**\n     * {@inheritdoc}\n     */\n    public static function findIdentityByAccessToken($token, $type = null)\n    {\n        foreach (self::$users as $user) {\n            if ($user['accessToken'] === $token) {\n                return new static($user);\n            }\n        }\n\n        return null;\n    }\n\n    /**\n     * Finds user by username\n     *\n     * @param string $username\n     * @return static|null\n     */\n    public static function findByUsername($username)\n    {\n        foreach (self::$users as $user) {\n            if (strcasecmp($user['username'], $username) === 0) {\n                return new static($user);\n            }\n        }\n\n        return null;\n    }\n\n    /**\n     * {@inheritdoc}\n     */\n    public function getId()\n    {\n        return $this->id;\n    }\n\n    /**\n     * {@inheritdoc}\n     */\n    public function getAuthKey()\n    {\n        return $this->authKey;\n    }\n\n    /**\n     * {@inheritdoc}\n     */\n    public function validateAuthKey($authKey)\n    {\n        return $this->authKey === $authKey;\n    }\n\n    /**\n     * Validates password\n     *\n     * @param string $password password to validate\n     * @return bool if password provided is valid for current user\n     */\n    public function validatePassword($password)\n    {\n        return $this->password === $password;\n    }\n}\n",
+			"file": "models/User.php",
+			"file_size": 2386,
+			"file_write_time": 132049899809170066,
 			"settings":
 			{
-				"buffer_size": 7811,
+				"buffer_size": 2386,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/data/index.php",
+			"settings":
+			{
+				"buffer_size": 957,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "docker-compose.yml",
+			"settings":
+			{
+				"buffer_size": 842,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -438,19 +457,11 @@
 	"expanded_folders":
 	[
 		"/D/Git/datmin",
-		"/D/Git/datmin/components",
-		"/D/Git/datmin/config",
-		"/D/Git/datmin/controllers",
-		"/D/Git/datmin/db",
-		"/D/Git/datmin/models",
-		"/D/Git/datmin/views",
-		"/D/Git/datmin/views/data",
-		"/D/Git/datmin/views/layouts",
-		"/D/Git/datmin/views/site",
-		"/D/Git/datmin/views/testing"
+		"/D/Git/datmin/vendor"
 	],
 	"file_history":
 	[
+		"/D/Git/datmin/components/C45.php",
 		"/D/Git/datmin/views/testing/create.php",
 		"/D/Git/datmin/controllers/TestingController.php",
 		"/D/Git/datmin/controllers/DataController.php",
@@ -465,7 +476,6 @@
 		"/D/Git/datmin/vendor/yiisoft/yii2-gii/src/generators/model/default/model.php",
 		"/D/Git/datmin/config/web.php",
 		"/D/Git/datmin/web/.htaccess",
-		"/D/Git/datmin/components/C45.php",
 		"/D/Git/datmin/controllers/SiteController.php",
 		"/D/Git/datmin/docker-compose.yml",
 		"/D/Git/datmin/config/db.php",
@@ -620,24 +630,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "components/C45.php",
+					"file": "models/User.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7811,
+						"buffer_size": 2386,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3560,
-								3560
+								327,
+								327
 							]
 						],
 						"settings":
@@ -647,7 +657,67 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2883.0,
+						"translation.y": 0.8,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/data/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 957,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								292,
+								292
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "docker-compose.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 842,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -708,6 +778,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"d",
+				"docker-compose.yml"
+			],
 			[
 				"compo",
 				"composer.json"
