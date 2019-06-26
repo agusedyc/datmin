@@ -340,12 +340,36 @@
 	"buffers":
 	[
 		{
-			"file": "components/C45.php",
+			"file": "models/User.php",
 			"settings":
 			{
 				"buffer_size": 7811,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/data/index.php",
+			"settings":
+			{
+				"buffer_size": 957,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "docker-compose.yml",
+			"settings":
+			{
+				"buffer_size": 842,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "controllers/DataController.php",
+			"settings":
+			{
+				"buffer_size": 10851,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -438,19 +462,14 @@
 	"expanded_folders":
 	[
 		"/D/Git/datmin",
-		"/D/Git/datmin/components",
-		"/D/Git/datmin/config",
 		"/D/Git/datmin/controllers",
-		"/D/Git/datmin/db",
-		"/D/Git/datmin/models",
-		"/D/Git/datmin/views",
-		"/D/Git/datmin/views/data",
-		"/D/Git/datmin/views/layouts",
-		"/D/Git/datmin/views/site",
-		"/D/Git/datmin/views/testing"
+		"/D/Git/datmin/models"
 	],
 	"file_history":
 	[
+		"/D/Git/datmin/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls.php",
+		"/D/Git/datmin/vendor/phpoffice/phpspreadsheet/samples/Basic/04_Printing.php",
+		"/D/Git/datmin/components/C45.php",
 		"/D/Git/datmin/views/testing/create.php",
 		"/D/Git/datmin/controllers/TestingController.php",
 		"/D/Git/datmin/controllers/DataController.php",
@@ -576,19 +595,18 @@
 		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/template.php",
 		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/home/login.php",
 		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/template/dashboard/navBar.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Auth.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/sftp-config.json",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/api/Example.php"
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Auth.php"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
-		"height": 98.0,
+		"height": 104.0,
 		"where_history":
 		[
+			"D:\\Git\\datmin\\vendor\\phpoffice\\phpspreadsheet",
 			""
 		]
 	},
@@ -597,6 +615,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"TYPE_STRING",
 			"_hitung",
 			"post",
 			"sds",
@@ -620,7 +639,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -647,7 +666,97 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2883.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/data/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 957,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								292,
+								292
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "docker-compose.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 842,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "controllers/DataController.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 10851,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4807,
+								4807
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2592.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
