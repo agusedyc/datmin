@@ -504,7 +504,6 @@
 		"/D/Git/datmin/vendor/yiisoft/yii2-gii/src/generators/model/default/model.php",
 		"/D/Git/datmin/config/web.php",
 		"/D/Git/datmin/web/.htaccess",
-		"/D/Git/datmin/components/C45.php",
 		"/D/Git/datmin/controllers/SiteController.php",
 		"/D/Git/datmin/docker-compose.yml",
 		"/D/Git/datmin/config/db.php",
@@ -897,6 +896,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"d",
+				"docker-compose.yml"
+			],
 			[
 				"compo",
 				"composer.json"
