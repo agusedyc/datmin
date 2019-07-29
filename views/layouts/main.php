@@ -22,6 +22,38 @@ AppAsset::register($this);
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <style type="text/css">
+        .navbar-inverse {
+            background-color: #f00;
+            border-color: #ff0000;
+        }
+        .navbar-inverse .navbar-nav > li > a {
+            color: #ffffff;
+        }
+        .navbar-inverse .navbar-brand {
+            color: #ffffff;
+        }
+
+        .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+            color: #fff;
+            background-color: #d70000;
+        }
+
+        img.pull-left {
+            width: 200px;
+        }
+
+        .navbar-brand {
+            float: left;
+            height: 50px;
+            padding: 0;
+            font-size: 18px;
+            line-height: 20px;
+        }
+        img#image-header {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -30,7 +62,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         // 'brandLabel' => Yii::$app->name,
-        'brandLabel' => 'Sistem Pakar',
+        'brandLabel' => '<img src="http://ayodonor.pmi.or.id/assets/img/PMI.png" width="" class="pull-left"/>',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -39,7 +71,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
+            // ['label' => 'Home', 'url' => ['/site/index']],
             // ['label' => 'About', 'url' => ['/site/about']],
             // ['label' => 'Contact', 'url' => ['/site/contact']],
             ['label' => 'Data', 'url' => ['/data/index']],

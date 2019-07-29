@@ -340,15 +340,12 @@
 	"buffers":
 	[
 		{
-			"contents": "<?php\n\nnamespace app\\models;\n\nclass User extends \\yii\\base\\BaseObject implements \\yii\\web\\IdentityInterface\n{\n    public $id;\n    public $username;\n    public $password;\n    public $authKey;\n    public $accessToken;\n\n    private static $users = [\n        '100' => [\n            'id' => '100',\n            'username' => 'Anita',\n            'password' => '337413101119001',\n            'authKey' => 'test100key',\n            'accessToken' => '100-token',\n        ],\n        '101' => [\n            'id' => '101',\n            'username' => 'Eny',\n            'password' => '337407100619001',\n            'authKey' => 'test101key',\n            'accessToken' => '101-token',\n        ],\n        '102' => [\n            'id' => '102',\n            'username' => 'admin',\n            'password' => 'admin',\n            'authKey' => 'test102key',\n            'accessToken' => '102-token',\n        ],\n    ];\n\n\n    /**\n     * {@inheritdoc}\n     */\n    public static function findIdentity($id)\n    {\n        return isset(self::$users[$id]) ? new static(self::$users[$id]) : null;\n    }\n\n    /**\n     * {@inheritdoc}\n     */\n    public static function findIdentityByAccessToken($token, $type = null)\n    {\n        foreach (self::$users as $user) {\n            if ($user['accessToken'] === $token) {\n                return new static($user);\n            }\n        }\n\n        return null;\n    }\n\n    /**\n     * Finds user by username\n     *\n     * @param string $username\n     * @return static|null\n     */\n    public static function findByUsername($username)\n    {\n        foreach (self::$users as $user) {\n            if (strcasecmp($user['username'], $username) === 0) {\n                return new static($user);\n            }\n        }\n\n        return null;\n    }\n\n    /**\n     * {@inheritdoc}\n     */\n    public function getId()\n    {\n        return $this->id;\n    }\n\n    /**\n     * {@inheritdoc}\n     */\n    public function getAuthKey()\n    {\n        return $this->authKey;\n    }\n\n    /**\n     * {@inheritdoc}\n     */\n    public function validateAuthKey($authKey)\n    {\n        return $this->authKey === $authKey;\n    }\n\n    /**\n     * Validates password\n     *\n     * @param string $password password to validate\n     * @return bool if password provided is valid for current user\n     */\n    public function validatePassword($password)\n    {\n        return $this->password === $password;\n    }\n}\n",
 			"file": "models/User.php",
-			"file_size": 2386,
-			"file_write_time": 132049899809170066,
 			"settings":
 			{
 				"buffer_size": 2386,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -360,10 +357,35 @@
 			}
 		},
 		{
+			"file": "views/data/dataset.php",
+			"settings":
+			{
+				"buffer_size": 1237,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "controllers/DataController.php",
+			"settings":
+			{
+				"buffer_size": 10851,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "docker-compose.yml",
 			"settings":
 			{
 				"buffer_size": 842,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/layouts/main.php",
+			"settings":
+			{
+				"buffer_size": 2527,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -457,10 +479,16 @@
 	"expanded_folders":
 	[
 		"/D/Git/datmin",
-		"/D/Git/datmin/vendor"
+		"/D/Git/datmin/controllers",
+		"/D/Git/datmin/models",
+		"/D/Git/datmin/views",
+		"/D/Git/datmin/views/data",
+		"/D/Git/datmin/views/layouts",
+		"/D/Git/datmin/web"
 	],
 	"file_history":
 	[
+		"/D/Git/datmin/vendor/phpoffice/phpspreadsheet/samples/Basic/04_Printing.php",
 		"/D/Git/datmin/components/C45.php",
 		"/D/Git/datmin/views/testing/create.php",
 		"/D/Git/datmin/controllers/TestingController.php",
@@ -586,19 +614,18 @@
 		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/template.php",
 		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/home/login.php",
 		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/template/dashboard/navBar.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Auth.php",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/sftp-config.json",
-		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/api/Example.php"
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Auth.php"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
-		"height": 98.0,
+		"height": 104.0,
 		"where_history":
 		[
+			"D:\\Git\\datmin\\vendor\\phpoffice\\phpspreadsheet",
 			""
 		]
 	},
@@ -607,6 +634,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"TYPE_STRING",
 			"_hitung",
 			"post",
 			"sds",
@@ -630,7 +658,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -646,8 +674,8 @@
 						"selection":
 						[
 							[
-								327,
-								327
+								0,
+								0
 							]
 						],
 						"settings":
@@ -657,10 +685,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.8,
+						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -687,14 +715,74 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "views/data/dataset.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								824,
+								824
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
+					"file": "controllers/DataController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10851,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6826,
+								6773
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3836.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "docker-compose.yml",
 					"semi_transient": false,
 					"settings":
@@ -720,7 +808,37 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "views/layouts/main.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2527,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								814,
+								814
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
