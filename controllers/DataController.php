@@ -256,6 +256,8 @@ class DataController extends Controller
         $c45->setData($data)->setAttributes($attributes);
         // Hitung menggunakan data training
         $c45->hitung();
+        // $a = ;
+        print_r($c45->cetakHitung());
 
         // Uji Coba dengan menggunakan 1 data testing sebagai berikut:
 
@@ -273,6 +275,28 @@ class DataController extends Controller
         return $this->render('rule', [
             'rule' => $c45,
             // 'attribute' => $this->getAttributeGridView($dataset),
+        ]);
+    }
+
+    public function actionHitungTree()
+    {
+        $model = Data::find()->where(['status'=>'1'])->one();
+        $sheetData = $this->loadCsv('/uploads/datasets/'.$model->file);
+        // Nama Atribut data
+        $attributes = $this->getAttribute($sheetData);
+        $data = $this->dataType($sheetData,'string');
+        
+
+        $c45 = Yii::$app->c45;
+
+        // Set data dan atribut
+        $c45->setData($data)->setAttributes($attributes);
+        // Hitung menggunakan data training
+        // $c45->hitung();
+        $hitung_rule = $c45->cetakHitung();
+        
+        return $this->render('hitungan', [
+            'hitung_rule' => $hitung_rule,
         ]);
     }
 

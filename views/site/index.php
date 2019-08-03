@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 
-$this->title = 'Sistem Pakar';
+$this->title = 'UTD PMI Semarang';
 ?>
 <div class="site-index">
 

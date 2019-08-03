@@ -373,6 +373,16 @@
 			}
 		},
 		{
+			"file": "config/db.php",
+			"settings":
+			{
+				"buffer_size": 347,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "db.php"
+			}
+		},
+		{
 			"file": "docker-compose.yml",
 			"settings":
 			{
@@ -384,7 +394,7 @@
 			"file": "views/layouts/main.php",
 			"settings":
 			{
-				"buffer_size": 2527,
+				"buffer_size": 3428,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -479,6 +489,7 @@
 	"expanded_folders":
 	[
 		"/D/Git/datmin",
+		"/D/Git/datmin/config",
 		"/D/Git/datmin/controllers",
 		"/D/Git/datmin/models",
 		"/D/Git/datmin/views",
@@ -658,7 +669,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -688,7 +699,7 @@
 						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -718,7 +729,7 @@
 						"translation.y": 108.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -748,7 +759,7 @@
 						"translation.y": 108.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -764,8 +775,8 @@
 						"selection":
 						[
 							[
-								6826,
-								6773
+								6459,
+								6459
 							]
 						],
 						"settings":
@@ -778,11 +789,40 @@
 						"translation.y": 3836.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
+					"file": "config/db.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								347,
+								347
+							]
+						],
+						"settings":
+						{
+							"auto_name": "db.php",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "docker-compose.yml",
 					"semi_transient": false,
 					"settings":
@@ -808,24 +848,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "views/layouts/main.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2527,
+						"buffer_size": 3428,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								814,
-								814
+								0,
+								0
 							]
 						],
 						"settings":
@@ -838,7 +878,7 @@
 						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -882,6 +922,10 @@
 	"output.sftp":
 	{
 		"height": 39.0
+	},
+	"output.stino_panel":
+	{
+		"height": 0.0
 	},
 	"pinned_build_system": "",
 	"project": "ml-data.sublime-project",

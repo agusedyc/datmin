@@ -46,6 +46,15 @@ class C45 extends Component
         $this->generateRules();
     }
 
+    public function cetakHitung()
+    {
+        // echo '<pre>';
+        return $this->_hitung($this->data, $this->attributes);
+        // echo '</pre>';
+
+        // $this->generateRules();
+    }
+
     public function _hitung(array $data, array $attributes, $base = null, $kasus = null)     
     {
         // HITUNG JUMLAH DATA
@@ -109,14 +118,14 @@ class C45 extends Component
                 }
                 $leafs[$indexAttribute][$case] = $entropyAttribute;
                 // echo ">".$case." Entropy ", $entropyAttribute , "<br>";
-                $print[] = "'>'.$case.' Entropy ', $entropyAttribute , '<br>'";
+                $print[] = "Case : $case Entropy = $entropyAttribute <br>";
                 $lx += $jumlah_case/$jumlah_data*$entropyAttribute;
 
             }
             $gain =  $entropy_total - $lx;
             $gains[$indexAttribute] = $gain;
             // echo "==>"."Gain " . $gain, "<br>";
-            $print[] = "'==>'.'Gain ' . $gain, '<br>'";
+            $print[] = "Gain : $gain <br><br>";
 
 
         }
@@ -133,30 +142,30 @@ class C45 extends Component
         }
 
         // echo "====>"."<h1>Atribut root ", $attributes[$root], "</h1>";
-        $print[] = "'====>'.'<h1>Atribut root ', $attributes[$root], '</h1>'";
+        $print2[] = "<h1>Atribut root $attributes[$root]</h1>";
         foreach($leafs[$root] as $label => $entropy) {
             // echo "<h1 style='color:red'>$label $entropy</h1>";
-            $print[] = "'<h1 style='color:red'>$label $entropy</h1>'";
+            $print2[] = "'<h1 style='color:red'>Case : $label Entropy = $entropy</h1>'";
             if($entropy == 0) {
                 $this->rules[$root][$label] = [
                     "kasus" => $label, 
                     "nilai" => $labels[$root][$label]
                 ];
                 // echo "===>"."<h1 style='color:blue'> $root ". $label . ' '.$labels[$root][$label], "</h1>";
-                $print[] = "===> <h1 style='color:blue'> ".$root." ".$label." ".$labels[$root][$label]." </h1>";
+                $print2[] = "<h1 style='color:blue'>Case ".$root." ".$label." ".$labels[$root][$label]." </h1>";
             }
 
             if($entropy > 0 && $entropy <= 1) {
 
                 if ($base != null) {
                     // echo "===>"."Roote ".$root;
-                    $print[] = "'===>'.'Roote '.$root'";
+                    $print2[] = "'===>'.'Roote '.$root'";
                     $this->rules[$root][$label] = [
                         "kasus" => $label.'-', "forward" => $base+1
 
                     ];
                     // echo "=========="."<hr>"."==========", $root;
-                    $print[] = "'=========='.'<hr>'.'==========', $root";
+                    $print2[] = "'=========='.'<hr>'.'==========', $root";
                 } else {
                     $this->rules[$root][$label] = $label;
                 }
@@ -176,6 +185,8 @@ class C45 extends Component
 
         }
 
+        // return array_merge($print,$print2);
+        return array_merge($print);
 
     }
 
