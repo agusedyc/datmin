@@ -257,7 +257,7 @@ class DataController extends Controller
         // Hitung menggunakan data training
         $c45->hitung();
         // $a = ;
-        print_r($c45->cetakHitung());
+        // print_r($c45->cetakHitung());
 
         // Uji Coba dengan menggunakan 1 data testing sebagai berikut:
 
