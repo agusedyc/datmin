@@ -27,10 +27,10 @@ class DataController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['index','dataset','tree','logout'],
+                'only' => ['index','dataset','tree','logout','hitung-tree'],
                 'rules' => [
                     [
-                        'actions' => ['index','dataset','tree','logout'],
+                        'actions' => ['index','dataset','tree','logout','hitung-tree'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -257,7 +257,7 @@ class DataController extends Controller
         // Hitung menggunakan data training
         $c45->hitung();
         // $a = ;
-        print_r($c45->cetakHitung());
+        // print_r($c45->cetakHitung());
 
         // Uji Coba dengan menggunakan 1 data testing sebagai berikut:
 
