@@ -27,10 +27,10 @@ class DataController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['index','dataset','tree','logout'],
+                'only' => ['index','dataset','tree','logout','hitung-tree'],
                 'rules' => [
                     [
-                        'actions' => ['index','dataset','tree','logout'],
+                        'actions' => ['index','dataset','tree','logout','hitung-tree'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
