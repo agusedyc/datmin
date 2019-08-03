@@ -76,6 +76,7 @@ AppAsset::register($this);
             // ['label' => 'Contact', 'url' => ['/site/contact']],
             ['label' => 'Data', 'url' => ['/data/index']],
             ['label' => 'Dataset', 'url' => ['/data/dataset']],
+            ['label' => 'Perhitungan', 'url' => ['/data/hitung-tree']],
             ['label' => 'Tree', 'url' => ['/data/tree']],
             ['label' => 'Testing', 'url' => ['/testing/index']],
             Yii::$app->user->isGuest ? (
@@ -106,7 +107,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; Sistem Pakar <?= date('Y') ?></p>
+        <p class="pull-left">&copy; UTD PMI Semarang <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
