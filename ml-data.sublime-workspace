@@ -360,7 +360,7 @@
 			"file": "controllers/DataController.php",
 			"settings":
 			{
-				"buffer_size": 11585,
+				"buffer_size": 11616,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -382,16 +382,6 @@
 				"buffer_size": 8672,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config/db.php",
-			"settings":
-			{
-				"buffer_size": 347,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "db.php"
 			}
 		},
 		{
@@ -519,6 +509,7 @@
 	],
 	"file_history":
 	[
+		"/D/Git/datmin/config/db.php",
 		"/D/Git/datmin/vendor/phpoffice/phpspreadsheet/samples/Basic/04_Printing.php",
 		"/D/Git/datmin/components/C45.php",
 		"/D/Git/datmin/views/testing/create.php",
@@ -537,7 +528,6 @@
 		"/D/Git/datmin/web/.htaccess",
 		"/D/Git/datmin/controllers/SiteController.php",
 		"/D/Git/datmin/docker-compose.yml",
-		"/D/Git/datmin/config/db.php",
 		"/D/Git/datmin/config/console.php",
 		"/D/Git/datmin/views/site/index.php",
 		"/D/Git/datmin/uploads/datasets/data_donor_darah_2.csv",
@@ -649,7 +639,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -693,7 +683,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -723,7 +713,7 @@
 						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -753,7 +743,7 @@
 						"translation.y": 108.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -762,15 +752,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11585,
+						"buffer_size": 11616,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8967,
-								8967
+								669,
+								669
 							]
 						],
 						"settings":
@@ -780,10 +770,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4900.0,
+						"translation.y": 864.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -847,35 +837,6 @@
 				},
 				{
 					"buffer": 5,
-					"file": "config/db.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 347,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								104,
-								130
-							]
-						],
-						"settings":
-						{
-							"auto_name": "db.php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
 					"file": "views/site/index.php",
 					"semi_transient": false,
 					"settings":
@@ -905,7 +866,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "docker-compose.yml",
 					"semi_transient": false,
 					"settings":
@@ -931,11 +892,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 7,
 					"file": "views/layouts/main.php",
 					"semi_transient": false,
 					"settings":
@@ -1006,6 +967,10 @@
 	{
 		"height": 39.0
 	},
+	"output.stino_build_panel":
+	{
+		"height": 0.0
+	},
 	"output.stino_panel":
 	{
 		"height": 0.0
@@ -1014,7 +979,7 @@
 	"project": "ml-data.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
