@@ -51,7 +51,7 @@ class Data extends \yii\db\ActiveRecord
     public function upload()
     {
         if ($this->validate()) {
-            $this->file->saveAs('uploads/datasets/' . $this->file->baseName . '.' . $this->file->extension);
+            $this->file->saveAs(Yii::$app->basePath.'/uploads/datasets/' . $this->file->baseName . '.' . $this->file->extension);
             return true;
         } else {
             return false;
