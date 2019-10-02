@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $model app\models\Testing */
 
 $this->title = Yii::t('app', 'Data Cek Donor');
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Testings'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Cek Donor'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="testing-create">
