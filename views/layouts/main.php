@@ -78,7 +78,7 @@ AppAsset::register($this);
             ['label' => 'Dataset', 'url' => ['/data/dataset']],
             ['label' => 'Perhitungan', 'url' => ['/data/hitung-tree']],
             ['label' => 'Tree', 'url' => ['/data/tree']],
-            ['label' => 'Testing', 'url' => ['/testing/index']],
+            ['label' => 'Cek Donor', 'url' => ['/testing/index']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
