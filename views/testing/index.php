@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'data_testing:ntext',
              [
                 'attribute'=>'data_testing',
-                'label'=>'Data Testing',
+                'label'=>'Data Pasien',
                 'format'=> 'raw',
                 'value' => function($data){
                     $formData = json_decode($data->data_testing);
