@@ -3,11 +3,12 @@ version: '3.2'
 services:
   php:
     image: yiisoftware/yii2-php:7.2-apache
+    container_name: datmin_php
     volumes:
       - ~/.composer-docker/cache:/root/.composer/cache:delegated
       - .:/app:delegated
     ports:
-      - 30080:80
+      - 19028:80
     links:
       - mariadb
     # environment:
@@ -15,11 +16,12 @@ services:
 
   mariadb:
     image: mariadb:10.3
+    container_name: datmin_mariadb
     volumes:
       # - ./docker/dbdata:/var/lib/mysql
       - apps_persistent:/var/lib/mysql
     ports:
-      - 33306:3306
+      - 19026:3306
     restart: always
     environment:
       - TZ=Asia/Jakarta
@@ -27,15 +29,6 @@ services:
       # - MYSQL_PASSWORD=pass_apps_data
       - MYSQL_ROOT_PASSWORD=admin_db
       - MYSQL_DATABASE=apps_docker
-
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    depends_on:
-      - mariadb
-    ports:
-      - 38181:80
-    environment:
-      - PMA_HOST=mariadb
       
 volumes:
   apps_persistent:
